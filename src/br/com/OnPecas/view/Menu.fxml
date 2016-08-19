@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.OnPecas.controller.MenuController">
+   <children>
+      <Hyperlink fx:id="linkRelatorio" layoutX="37.0" layoutY="70.0" onAction="#relatorios" text="Relatórios">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="linkGrafico" layoutX="37.0" layoutY="129.0" onAction="#Graficos" text="Gráficos">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="linkFuncionarios" layoutX="37.0" layoutY="194.0" onAction="#Funcionarios" text="Funcionários">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Hyperlink>
+      <Separator layoutX="190.0" orientation="VERTICAL" prefHeight="494.0" prefWidth="7.0" />
+   </children>
+</AnchorPane>

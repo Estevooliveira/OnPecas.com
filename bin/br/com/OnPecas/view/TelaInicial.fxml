@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.OnPecas.controller.TelaInicialController">
+   <top>
+      <Label prefHeight="50.0" text="OnPeças.com" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+      </Label>
+   </top>
+   <left>
+   		<fx:include source="Menu.fxml" />
+   </left>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="txtNome" layoutX="22.0" layoutY="191.0" text="Olá tioooo">
+               <font>
+                  <Font name="Verdana Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

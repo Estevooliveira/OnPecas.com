@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.OnPecas.controller.FuncionariosController">
+   <top>
+      <Label prefHeight="50.0" text="OnPeças.com" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+      </Label>
+   </top>
+   <left>
+   		<fx:include source="Menu.fxml" />
+   </left>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="96.0" layoutY="30.0" text="Cadastro De Funcionários">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="73.0" text="Nome:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtNome" layoutX="126.0" layoutY="71.0" />
+            <Label layoutX="36.0" layoutY="104.0" text="dt_admissao:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="146.0" text="cargo:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cboxCargo" layoutX="128.0" layoutY="144.0" prefHeight="25.0" prefWidth="145.0" />
+            <Button fx:id="btnSalvar" layoutX="36.0" layoutY="179.0" mnemonicParsing="false" onAction="#salvar" prefWidth="100.0" text="Salvar">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font></Button>
+            <DatePicker fx:id="dataAdmissao" layoutX="126.0" layoutY="102.0" onAction="#Selecione" />
+            <ListView fx:id="listFuncionarios" layoutX="-7.0" layoutY="212.0" prefHeight="200.0" prefWidth="400.0" />
+            <Button fx:id="btnDeletar" layoutX="36.0" layoutY="431.0" mnemonicParsing="false" onAction="#Deletar" prefHeight="0.0" prefWidth="100.0" text="Deletar">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnAtualizar" layoutX="250.0" layoutY="431.0" mnemonicParsing="false" onAction="#Atualizar" prefWidth="100.0" text="Atualizar">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font></Button>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.OnPecas.controller.LoginController">
+   <center>
+      <Pane fx:id="pnInicio" prefHeight="500.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="400.0" layoutX="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="br/com/OnPecas/view/LogoOnPecas.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="168.0" layoutY="288.0" text="Usuario:">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="168.0" layoutY="333.0" text="Senha:">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUsuario" layoutX="257.0" layoutY="285.0" />
+            <TextField fx:id="txtSenha" layoutX="257.0" layoutY="330.0" />
+            <Button fx:id="btnEntrar" layoutX="250.0" layoutY="383.0" mnemonicParsing="false" onAction="#Entrar" prefHeight="30.0" prefWidth="100.0" text="Entrar" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
